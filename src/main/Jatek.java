@@ -1,6 +1,8 @@
 
 package main;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 
@@ -244,23 +246,35 @@ public class Jatek extends javax.swing.JFrame {
     String aktiv = "";
     int klikk = 0;
     
-    /*gobmnevek sor_oszlop*/
-    private void btn1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1_2ActionPerformed
-        aktiv = "k";//ezt le kell kérdezni, kép alapján!
-        gomb = btn1_2;
+
+    private void gomb_kezelo(JButton gomb){
+        String ikon=gomb.getIcon().toString();
+        int fajlNev = ikon.lastIndexOf("/");
+        char elsoBetu=ikon.charAt(fajlNev+1);
+        aktiv=elsoBetu+"";
+        String szin="";
         lblInstrukciok.setText("Jelöld, hogy hova rakod!");
-        lblKivalasztva.setText("Kiválsztva: kék");
+        if (aktiv.equals("k")){
+            szin="kék";
+        }else if(aktiv.equals("z")){
+            szin="zöld";
+        }else if(aktiv.equals("p")){
+            szin="piros";
+        }
+        lblKivalasztva.setText("Kiválsztva: "+szin);
+        lblInstrukciok.setText("Jelöld, hogy hova rakod!");
         klikk++;
         lblLepesekSzama.setText("Lépések száéma: " + klikk);
+    }
+    /*gobmnevek sor_oszlop*/
+    private void btn1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1_2ActionPerformed
+        gomb = btn1_2;
+        gomb_kezelo(gomb);
     }//GEN-LAST:event_btn1_2ActionPerformed
 
     private void btn2_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2_2ActionPerformed
-        aktiv = "z";//ezt le kell kérdezni, kép alapján!
         gomb = btn2_2;
-        lblInstrukciok.setText("Jelöld, hogy hova rakod!");
-        lblKivalasztva.setText("Kiválsztva: zöld");
-        klikk++;
-        lblLepesekSzama.setText("Lépések száéma: " + klikk);
+        gomb_kezelo(gomb);
     }//GEN-LAST:event_btn2_2ActionPerformed
 
     private void btn3_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3_2ActionPerformed
