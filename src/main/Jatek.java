@@ -278,12 +278,8 @@ public class Jatek extends javax.swing.JFrame {
     }//GEN-LAST:event_btn2_2ActionPerformed
 
     private void btn3_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3_2ActionPerformed
-        aktiv = "p";//ezt le kell kérdezni, kép alapján!
         gomb = btn3_2;
-        lblInstrukciok.setText("Jelöld, hogy hova rakod!");
-        lblKivalasztva.setText("Kiválsztva: piros");
-        klikk++;
-        lblLepesekSzama.setText("Lépések száéma: " + klikk);
+        gomb_kezelo(gomb);
     }//GEN-LAST:event_btn3_2ActionPerformed
 
     private void btn4_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4_4ActionPerformed
