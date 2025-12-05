@@ -18,25 +18,25 @@ public class Jatek extends javax.swing.JFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblInstrukciok = new javax.swing.JLabel();
+        btn1_1 = new javax.swing.JButton();
+        btn1_2 = new javax.swing.JButton();
+        btn1_3 = new javax.swing.JButton();
+        btn1_4 = new javax.swing.JButton();
+        btn2_1 = new javax.swing.JButton();
+        btn2_2 = new javax.swing.JButton();
+        btn2_3 = new javax.swing.JButton();
+        btn2_4 = new javax.swing.JButton();
+        btn3_1 = new javax.swing.JButton();
+        btn3_2 = new javax.swing.JButton();
+        btn3_3 = new javax.swing.JButton();
+        btn3_4 = new javax.swing.JButton();
+        btn4_1 = new javax.swing.JButton();
+        btn4_2 = new javax.swing.JButton();
+        btn4_3 = new javax.swing.JButton();
+        btn4_4 = new javax.swing.JButton();
+        lblKivalasztva = new javax.swing.JLabel();
+        lblLepesekSzama = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -51,50 +51,50 @@ public class Jatek extends javax.swing.JFrame {
         setTitle("Logikai játék");
         setResizable(false);
 
-        jLabel1.setText("Válaszd ki az egyik oszlop legfelső elemét!");
+        lblInstrukciok.setText("Válaszd ki az egyik oszlop legfelső elemét!");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btn1_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
+        btn1_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btn1_2ActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png"))); // NOI18N
+        btn1_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png"))); // NOI18N
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
+        btn1_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btn2_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
+        btn2_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btn2_2ActionPerformed(evt);
             }
         });
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png"))); // NOI18N
+        btn2_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png"))); // NOI18N
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
+        btn2_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png"))); // NOI18N
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        btn3_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png"))); // NOI18N
+        btn3_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                btn3_2ActionPerformed(evt);
             }
         });
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
+        btn3_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
+        btn3_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
 
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btn4_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btn4_4ActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Kiválasztva: -");
+        lblKivalasztva.setText("Kiválasztva: -");
 
-        jLabel3.setText("Lépések száma: 0");
+        lblLepesekSzama.setText("Lépések száma: 0");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -105,85 +105,85 @@ public class Jatek extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                            .addComponent(btn1_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn1_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn1_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btn2_1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(btn2_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn2_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn2_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                            .addComponent(btn3_2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn3_3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn3_4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
+                            .addComponent(btn4_1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn4_2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn4_3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn4_4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(lblInstrukciok)
+                    .addComponent(lblKivalasztva)
+                    .addComponent(lblLepesekSzama))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton10, jButton11, jButton12, jButton13, jButton14, jButton15, jButton16, jButton17, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8, jButton9});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn1_1, btn1_2, btn1_3, btn1_4, btn2_1, btn2_2, btn2_3, btn2_4, btn3_1, btn3_2, btn3_3, btn3_4, btn4_1, btn4_2, btn4_3, btn4_4});
 
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lblInstrukciok)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn1_1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(btn1_2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4)
+                        .addComponent(btn1_3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton5))
+                        .addComponent(btn1_4))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn4_1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn4_2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn4_3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btn4_4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn2_1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn3_1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton10)
+                                .addComponent(btn3_2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton11)
+                                .addComponent(btn3_3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton13))
+                                .addComponent(btn3_4))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton7)
+                                .addComponent(btn2_2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton8)
+                                .addComponent(btn2_3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton9)))))
+                                .addComponent(btn2_4)))))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(lblKivalasztva)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
+                .addComponent(lblLepesekSzama)
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton10, jButton11, jButton12, jButton13, jButton14, jButton15, jButton16, jButton17, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8, jButton9});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btn1_1, btn1_2, btn1_3, btn1_4, btn2_1, btn2_2, btn2_3, btn2_4, btn3_1, btn3_2, btn3_3, btn3_4, btn4_1, btn4_2, btn4_3, btn4_4});
 
         jTabbedPane1.addTab("Játék", jPanel1);
 
@@ -243,44 +243,46 @@ public class Jatek extends javax.swing.JFrame {
     JButton gomb = null;
     String aktiv = "";
     int klikk = 0;
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    
+    /*gobmnevek sor_oszlop*/
+    private void btn1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1_2ActionPerformed
         aktiv = "k";//ezt le kell kérdezni, kép alapján!
-        gomb = jButton3;
-        jLabel1.setText("Jelöld, hogy hova rakod!");
-        jLabel2.setText("Kiválsztva: kék");
+        gomb = btn1_2;
+        lblInstrukciok.setText("Jelöld, hogy hova rakod!");
+        lblKivalasztva.setText("Kiválsztva: kék");
         klikk++;
-        jLabel3.setText("Lépések száéma: " + klikk);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        lblLepesekSzama.setText("Lépések száéma: " + klikk);
+    }//GEN-LAST:event_btn1_2ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btn2_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2_2ActionPerformed
         aktiv = "z";//ezt le kell kérdezni, kép alapján!
-        gomb = jButton7;
-        jLabel1.setText("Jelöld, hogy hova rakod!");
-        jLabel2.setText("Kiválsztva: zöld");
+        gomb = btn2_2;
+        lblInstrukciok.setText("Jelöld, hogy hova rakod!");
+        lblKivalasztva.setText("Kiválsztva: zöld");
         klikk++;
-        jLabel3.setText("Lépések száéma: " + klikk);
-    }//GEN-LAST:event_jButton7ActionPerformed
+        lblLepesekSzama.setText("Lépések száéma: " + klikk);
+    }//GEN-LAST:event_btn2_2ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void btn3_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3_2ActionPerformed
         aktiv = "p";//ezt le kell kérdezni, kép alapján!
-        gomb = jButton10;
-        jLabel1.setText("Jelöld, hogy hova rakod!");
-        jLabel2.setText("Kiválsztva: piros");
+        gomb = btn3_2;
+        lblInstrukciok.setText("Jelöld, hogy hova rakod!");
+        lblKivalasztva.setText("Kiválsztva: piros");
         klikk++;
-        jLabel3.setText("Lépések száéma: " + klikk);
-    }//GEN-LAST:event_jButton10ActionPerformed
+        lblLepesekSzama.setText("Lépések száéma: " + klikk);
+    }//GEN-LAST:event_btn3_2ActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void btn4_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4_4ActionPerformed
         if(aktiv.equals("k")){
-            jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png")));
+            btn4_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png")));
         }else if(aktiv.equals("z")){
-            jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png")));
+            btn4_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png")));
         }else if(aktiv.equals("p")){
-            jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png")));
+            btn4_4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/piros.png")));
         }
         aktiv = "";
         gomb.setIcon(null);
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_btn4_4ActionPerformed
 
     
     public static void main(String args[]) {
@@ -316,25 +318,22 @@ public class Jatek extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btn1_1;
+    private javax.swing.JButton btn1_2;
+    private javax.swing.JButton btn1_3;
+    private javax.swing.JButton btn1_4;
+    private javax.swing.JButton btn2_1;
+    private javax.swing.JButton btn2_2;
+    private javax.swing.JButton btn2_3;
+    private javax.swing.JButton btn2_4;
+    private javax.swing.JButton btn3_1;
+    private javax.swing.JButton btn3_2;
+    private javax.swing.JButton btn3_3;
+    private javax.swing.JButton btn3_4;
+    private javax.swing.JButton btn4_1;
+    private javax.swing.JButton btn4_2;
+    private javax.swing.JButton btn4_3;
+    private javax.swing.JButton btn4_4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
@@ -344,7 +343,10 @@ public class Jatek extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel lblInstrukciok;
+    private javax.swing.JLabel lblKivalasztva;
+    private javax.swing.JLabel lblLepesekSzama;
     // End of variables declaration//GEN-END:variables
 }
