@@ -46,7 +46,7 @@
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -202,6 +202,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btn1_1">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn1_1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn1_2">
               <Properties>
@@ -234,6 +237,9 @@
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn2_1">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn2_1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn2_2">
               <Properties>
@@ -266,6 +272,9 @@
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn3_1">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn3_1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btn3_2">
               <Properties>

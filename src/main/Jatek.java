@@ -4,6 +4,7 @@ package main;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 
 public class Jatek extends javax.swing.JFrame {
@@ -55,6 +56,12 @@ public class Jatek extends javax.swing.JFrame {
 
         lblInstrukciok.setText("Válaszd ki az egyik oszlop legfelső elemét!");
 
+        btn1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1_1ActionPerformed(evt);
+            }
+        });
+
         btn1_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/kek.png"))); // NOI18N
         btn1_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +83,12 @@ public class Jatek extends javax.swing.JFrame {
             }
         });
 
+        btn2_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2_1ActionPerformed(evt);
+            }
+        });
+
         btn2_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/zold.png"))); // NOI18N
         btn2_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +107,12 @@ public class Jatek extends javax.swing.JFrame {
         btn2_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2_4ActionPerformed(evt);
+            }
+        });
+
+        btn3_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3_1ActionPerformed(evt);
             }
         });
 
@@ -288,6 +307,7 @@ public class Jatek extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     JButton gomb = null;
@@ -299,23 +319,25 @@ public class Jatek extends javax.swing.JFrame {
     private void gomb_kezelo(JButton kivalasztottGomb){
         Icon ikon=kivalasztottGomb.getIcon();
         if (ikon != null){
-            String szoveg=ikon.toString();
-            int fajlNev = szoveg.lastIndexOf("/");
-            char elsoBetu=szoveg.charAt(fajlNev+1);
-            aktiv=elsoBetu+"";
-            String szin="";
-            lblInstrukciok.setText("Jelöld, hogy hova rakod!");
-            if (aktiv.equals("k")){
-                szin="kék";
-            }else if(aktiv.equals("z")){
-                szin="zöld";
-            }else if(aktiv.equals("p")){
-                szin="piros";
+            if (kivalasztottGomb.get){
+                String szoveg=ikon.toString();
+                int fajlNev = szoveg.lastIndexOf("/");
+                char elsoBetu=szoveg.charAt(fajlNev+1);
+                aktiv=elsoBetu+"";
+                String szin="";
+                lblInstrukciok.setText("Jelöld, hogy hova rakod!");
+                if (aktiv.equals("k")){
+                    szin="kék";
+                }else if(aktiv.equals("z")){
+                    szin="zöld";
+                }else if(aktiv.equals("p")){
+                    szin="piros";
+                }
             }
             lblKivalasztva.setText("Kiválsztva: "+szin);
             lblInstrukciok.setText("Jelöld, hogy hova rakod!");
             klikk++;
-            lblLepesekSzama.setText("Lépések száéma: " + klikk);
+            lblLepesekSzama.setText("Lépések száma: " + klikk);
             elozo_gomb=kivalasztottGomb;
             
         }else{
@@ -331,6 +353,9 @@ public class Jatek extends javax.swing.JFrame {
         
         }
         
+    }
+    private void felugroablak(JButton gomb){
+        JOptionPane.showMessageDialog(null,"Erre most nem lesz szükséged!","Információ",JOptionPane.INFORMATION_MESSAGE );
     }
     /*gobmnevek sor_oszlop*/
     private void btn1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1_2ActionPerformed
@@ -357,11 +382,6 @@ public class Jatek extends javax.swing.JFrame {
         gomb = btn4_3;
         gomb_kezelo(gomb);
     }//GEN-LAST:event_btn4_3ActionPerformed
-
-    private void btn4_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4_1ActionPerformed
-        gomb = btn4_1;
-        gomb_kezelo(gomb);
-    }//GEN-LAST:event_btn4_1ActionPerformed
 
     private void btn4_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4_2ActionPerformed
         gomb = btn4_2;
@@ -397,6 +417,26 @@ public class Jatek extends javax.swing.JFrame {
         gomb = btn3_4;
         gomb_kezelo(gomb);
     }//GEN-LAST:event_btn3_4ActionPerformed
+
+    private void btn1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1_1ActionPerformed
+        gomb = btn1_1;
+        felugroablak(gomb);
+    }//GEN-LAST:event_btn1_1ActionPerformed
+
+    private void btn2_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2_1ActionPerformed
+        gomb = btn2_1;
+        felugroablak(gomb);
+    }//GEN-LAST:event_btn2_1ActionPerformed
+
+    private void btn3_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3_1ActionPerformed
+        gomb = btn3_1;
+        felugroablak(gomb);
+    }//GEN-LAST:event_btn3_1ActionPerformed
+
+    private void btn4_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4_1ActionPerformed
+        gomb = btn4_1;
+        felugroablak(gomb);
+    }//GEN-LAST:event_btn4_1ActionPerformed
 
     
     public static void main(String args[]) {
